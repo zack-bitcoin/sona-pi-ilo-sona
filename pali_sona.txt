@@ -1,0 +1,285 @@
+pali sona
+
+toki ni li sama lili e lipu "the little schemer".
+toki ni li tan e jan sakawi.
+
+toki ni li kepeken e toki pona. http://tokipona.net/tp/default.aspx
+lon la sina sona e toki pona.
+toki ni li kepeken e toki scheme.
+nimi mute pi toki scheme: car, cdr, cons, null?, zero?, atom?, cond, true, false, define, quote, eq?, lambda, ), (
+
+
+
+o luka luka-
+
+o wan:
+  sina kama e list? pi atom?.
+  sina pana e list? pi atom?.
+  o sina toki e seme pi (null? ijo).
+  o sina toki e seme pi true.
+
+  sina kama e nanpa.
+  sina pana e nanpa alasa wan.
+  o sina toki e seme pi (zero? ijo).
+  o sina toki e seme pi true.
+
+  sina kame e list?.
+  sina pana e list?.
+  o sina toki e seme pi (null? ijo).
+  o sina toki e seme pi (atom? (car ijo)).
+  o sina toki e seme pi true
+
+o tu:
+  sina pali list? la o sina kepeken e cons.
+
+o tu wan:
+
+
+
+lon luka-
+
+lon car:
+    ken ala la (car ())
+    ken la (car linja)
+
+lon cdr:
+    ken ala la (cdr ())
+    ken la (cdr linja)
+    cdr li kama e linja
+
+lon cons:
+    ken la (cons ijo linja)
+    cons li kama e linja
+
+lon null?:
+    ken la (null? linja)
+
+lon eq?:
+    ken la (eq? ijo ijo)
+    ken ala la ijo li lon nanpa
+    ken ala la ijo li lon linja
+    o (atom? ijo) li true
+
+
+toki ni li jo lipu mute.
+wan: ijo musi
+tu: o ni, o ni, o ni, o ni...
+tu wan: cons li pona mute
+tu tu: nanpa musi
+luka: *jan sewi* , * li lon.
+luka wan: jan anpa pimeja li kama suno.
+luka tu: jan pona mute en jan mama sama
+luka tu wan: lambda li sewi mute
+luka tu tu: ... o ni, o ni, o ni, o ni ....
+luka luka: ni li nanpa seme
+
+
+ni li atom? anu seme
+   atom
+
+
+   atom li atom?. tan la atom li nimi.
+
+ni li atom? anu seme
+   turkey
+
+
+   turkey li atom?. tan la turkey li nimi.
+
+ni li atom? anu seme
+   1492
+
+
+   1492 li atom?. tan la 1492 li nanpa.
+
+ni li atom? anu seme
+   u
+
+
+   u li atom?. tan la u li nimi.
+
+ni li atom? anu seme
+   *abc$
+
+
+
+   *abc$ li atom?. tan la *abc$ li nimi. tan la *abc$ li jo ala e ( en )
+
+ni li list? anu seme
+   (atom)
+
+
+
+   (atom) li list?. tan la atom li atom? li insa ( en ). 
+
+ni li list? anu seme
+   (atom turkey or)
+
+
+
+   ni li list?. tan la ni li atom? mute li insa ( en )
+
+ni li list? anu seme
+   (atom turkey) or
+
+
+
+   ni li list? ala. tan la ni li kipisi. ijo wan li list?. ijo tu li atom?.
+
+ni li list? anu seme
+   ((atom turkey) or)
+
+
+
+   ni li list?. tan la ni li insa ( en ).
+
+ni li ijo anu seme
+   xyz
+
+
+
+
+   xyz li ijo. ni li atom? la ni li ijo.
+
+ni li ijo ano seme
+   (x y z)
+
+
+
+   ni li ijo. ni li list? la ni li ijo.
+
+ni li ijo anu seme
+   ((x y) z)
+
+
+
+   ni li ijo. ni li list? la ni li ijo.
+
+ni li list? anu seme
+   (sina li pilin pona ala pona)
+
+
+
+   ni li list?. tan la ijo mute li insa e ( en ).
+
+ijo pi nanpa seme li insa ( en ). ijo li seme.
+    (sina li pilin pona ala pona)
+
+
+    ni li nanpa luka wan. ijo mute li e ni: sina, li, pilin, pona, ala, en pona
+
+ni li list? anu seme.
+   (((sina) li) ((pilin) (pona ala)) pona)
+   
+
+
+   ni li list?. tan la ni li ijo mute li insa ( en ).
+
+ijo pi nanpa seme li insa ( en ). ijo li seme.
+   (((sina) li) ((pilin) (pona ala)) pona)
+
+
+
+
+   ni li nanpa tu wan. ijo mute li e ni: ((sina) li), ((pilin) (pona ala)), pona
+
+ni li list? anu seme.
+   ()
+
+
+
+   ni li list?. kin la ni li null?.
+
+ni li atom? anu seme.
+   ()
+
+
+
+   ni li atom? ala. tan la ni li list?.
+
+ni li list? anu seme.
+   (()()()())
+
+
+
+   ni li list?. tan la ni li ilo mute li insa e ( en ).
+
+car l li seme. l li sama e ((a b c) x y z).
+
+
+
+    ni li (a b c). tan la (a b c) li kama linja ijo. tan la ijo li null? ala.
+
+car l li seme. l li sama e hotdog.
+
+
+
+
+    ni li pakala. ijo li atom? la ken ala e seme car.
+
+car l li seme. l li sama e ().
+
+
+
+
+    ni li pakala. ijo li null? la ken ala e seme car.
+
+lon car:
+    ijo li atom? la ken ala e (car ijo)
+    ijo li null? la ken ala e (car ijo)
+    ijo li list? la ken e (car ijo)
+
+car l li seme. l li sama e (((moku soweli palisa)) (en) (kasi) namako)
+
+
+
+
+    ni li ((noku soweli palisa)).
+
+seme li (car l). l li sama e (((moku soweli palisa)) (en) (kasi) namako)
+
+
+
+
+    ni li ((moku soweli palisa)).
+    tan la "(car l)" li sama e "car l li seme".
+
+seme li (car (car l)). l li sama e (((moku soweli palisa)) (en))
+
+
+
+
+     ni li (moku soweli palisa).
+
+cdr l li seme. l li sama e (a b c)
+
+
+
+
+    ni li (b c). tan la (b c) li weka (car l).
+
+cdr l li seme. l li sama e ((a b c) x y z)
+
+
+
+    (x y z).
+
+cdr l li seme. l li sama e (moku)
+
+
+
+    ().
+
+(cdr l) li seme. l li sama e ((x) t r)
+
+
+
+     (t r),
+     	tan la "(cdr l)" li sama e "cdr l li seme".
+
+(cdr a) li seme. a li sama e moku.
+
+
+
+     ni li pakala. moku li atom?. ken ala la cdr ni.
+
